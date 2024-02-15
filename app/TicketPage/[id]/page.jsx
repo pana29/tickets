@@ -2,7 +2,7 @@ import TicketForm from '@/app/(components)/TicketForm';
 
 const getTicketById = async (id) => {
   try {
-    const res = await fetch(`http://localhost:3002/api/Tickets/${id}`, {
+    const res = await fetch(`https://tickets-app-pi.vercel.app/${id}`, {
       cache: "no-store",
     });
 
